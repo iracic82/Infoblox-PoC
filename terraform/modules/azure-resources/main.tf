@@ -77,6 +77,7 @@ resource "azurerm_public_ip" "ip_1" {
   name = "public_ip_1"
   resource_group_name = azurerm_resource_group.rg_iac.name
   location = azurerm_resource_group.rg_iac.location
+  sku                 = "Standard"
 }
 
 # Create a Network Interface
