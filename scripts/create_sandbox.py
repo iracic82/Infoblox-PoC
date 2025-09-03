@@ -16,7 +16,7 @@ sandbox_request_body = {
     "state": "active",
     "tags": {"instruqt": "igor"},
     "admin_user": {
-        "email": os.environ.get("INSTRUQT_EMAIL"),
+        "email": os.environ.get("INFOBLOX_EMAIL"),
         "name": TEAM_ID
     }
 }
