@@ -1,5 +1,6 @@
 import os
 import json
+import sys
 from sandbox_api import SandboxAccountAPI
 
 # Configuration
@@ -63,3 +64,4 @@ if create_response["status"] == "success":
         print("⚠️ External ID not found in admin_user.account_id.")
 else:
     print(f"❌ Sandbox creation failed: {create_response['error']}")
+    sys.exit(1)
