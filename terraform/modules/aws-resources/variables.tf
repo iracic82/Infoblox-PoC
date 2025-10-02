@@ -36,7 +36,7 @@ variable "aws_ec2_name" {
 variable "aws_ec2_instance_type" {
   description = "Instance Type of EC2"
   type        = string
-  default     = "t3.micro"
+  default     = "t3a.micro"
 }
 
 variable "private_ip" {
