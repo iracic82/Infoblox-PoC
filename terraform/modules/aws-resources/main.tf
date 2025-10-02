@@ -101,6 +101,10 @@ data "aws_ami" "amazon-linux-2-kernel-5" {
     name   = "name"
     values = ["amzn2-ami-kernel-5*"]
   }
+  filter {
+    name   = "architecture"
+    values = ["x86_64"]
+  }
 }
 
 # Create Security Group
