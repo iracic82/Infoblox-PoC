@@ -91,7 +91,7 @@ module "azure_instances_eu" {
   azure_instance_name  = each.value["azure_instance_name"]
   azure_private_ip     = each.value["azure_private_ip"]
   azure_server_key_pair_name  = each.value["azure_server_key_pair_name"]
-  azure_vm_size        = "Standard_DS3_v2"
+  azure_vm_size        = "Standard_D4s_v5"
   azure_admin_username = "linuxuser"
   azure_admin_password = "admin123"
   enable_peering = each.value["enable_peering"]
